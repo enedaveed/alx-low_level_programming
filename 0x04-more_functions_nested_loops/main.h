@@ -1,5 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
+
+int _putchar(char c);
 /**
  * _isupper - determines uppercase or not 
  * @c: character to determine
@@ -52,5 +54,11 @@ void print_square(int size);
  * @size: size of triangle
  */
 void print_triangle(int size);
+
+/**
+ * print_number - prints an integer , without using long, arrays, or pointers
+ * @n: number to be printed
+ */
+void print_number(int n);
 
 #endif

@@ -4,7 +4,7 @@
  *
  * @n: integer to print stuff
  */
-void print_line(int)
+void print_line(int n)
 {
 	int times;
 

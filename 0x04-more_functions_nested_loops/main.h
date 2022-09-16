@@ -8,6 +8,7 @@ int _putchar(char c);
  * Return: true or false
  */
 int _isupper(int c);
+void print_line(int n)
 /**
  * _isdigit - checks if it is digit
  * @c: character to check

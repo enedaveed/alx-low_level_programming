@@ -31,7 +31,7 @@ int idx_num_starts(char *s)
 
 	for (i = 0; i < _strlen(s); i++)
 	{
-		if (s[1] >= '0' && s[i] <= '9')
+		if (s[i] >= '0' && s[i] <= '9')
 			return (i);
 	}
 	return (-1); /* return -1 if no digits found */
@@ -86,7 +86,12 @@ int _atoi(char *s)
 	}
 
 	i = 1;
-	while (i < digits; i < (digit + digits_to_print); i++) /* calculate num */
+	while (i < digits_to_print) /* find powers of ten to multiply places */
+	{
+		t *= 10;
+		i++;
+	}
+	for (i < digits; i < (digit + digits_to_print); i++) /* calculate num */
 	{
 		num += (s[i] - '0') * t;
 		t /= 10;

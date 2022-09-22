@@ -2,7 +2,7 @@
 
 /**
  * _strcat - concatenate two strings
- * @dest - string to append by src
+ * @dest: string to append by src
  * @src: string to append to dest
  *
  * Return: address of dest

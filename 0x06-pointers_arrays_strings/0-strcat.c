@@ -2,26 +2,24 @@
 
 /**
  * _strcat - concatenate two strings
- * @dest - string to be appended to
- * @src: string to append
- * Return: Concatenated string
+ * @dest - destination of concat
+ * @src: source array to concat
+ * Return: Char value
  */
 
 char *_strcat(char *dest, char *src);
 {
-	int i = 0;
-	int j = 0;
+	int i;
+	int j;
 
-	while (dest[i] != '\0')
-		i++;
+	for (j = 0; dest[j] != '\0', j++)
+	{}
 
-	while (src[j] != '\0')
+	for (i = 0; src[i] != '\0'; i++)
 	{
-		dest[i] = src[j];
-		i++;
-		j++;
+		dest[j + i] = src[i];
 	}
-	dest[i] = '\0';
+	dest[j + i] = '\0';
 
 	return (dest);
 }

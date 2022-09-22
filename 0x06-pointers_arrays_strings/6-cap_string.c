@@ -22,6 +22,7 @@ int _indexOf(char a)
  * @s: string
  * Return: the string capitalized
  */
+
 char *cap_string(char *s)
 {
 	int i;
@@ -34,5 +35,6 @@ char *cap_string(char *s)
 			s[i] = s[i] - 32;
 
 	}
+
 	return (s);
 }

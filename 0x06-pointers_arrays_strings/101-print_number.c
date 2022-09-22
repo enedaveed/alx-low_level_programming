@@ -1,9 +1,11 @@
 #include "main.h"
 /**
+ * print_number - print number
  * print_number - prints number
  * @n:integer to convert to character
  *
  */
+
 void print_number(int n)
 {
 	unsigned int abs;
@@ -41,4 +43,3 @@ void print_number(int n)
 		mult /= 10;
 	}
 }
-
